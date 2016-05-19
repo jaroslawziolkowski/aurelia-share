@@ -1,0 +1,222 @@
+{
+  "id": 2,
+  "name": "\"aurelia-html-import-template-loader\"",
+  "kind": 2,
+  "kindString": "Module",
+  "flags": {},
+  "children": [
+    {
+      "id": 3,
+      "name": "HTMLImportTemplateLoader",
+      "kind": 128,
+      "kindString": "Class",
+      "flags": {
+        "isExported": true
+      },
+      "comment": {
+        "shortText": "An implementation of the TemplateLoader interface implemented using HTML Imports.\nSuitable for use when integrating with Polymer."
+      },
+      "children": [
+        {
+          "id": 4,
+          "name": "constructor",
+          "kind": 512,
+          "kindString": "Constructor",
+          "flags": {
+            "isExported": true
+          },
+          "comment": {
+            "shortText": "Creates an instance of HTMLImportTemplateLoader."
+          },
+          "signatures": [
+            {
+              "id": 5,
+              "name": "new HTMLImportTemplateLoader",
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "flags": {},
+              "comment": {
+                "shortText": "Creates an instance of HTMLImportTemplateLoader."
+              },
+              "parameters": [
+                {
+                  "id": 6,
+                  "name": "linkHrefPrefix",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "type": {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "HTMLImportTemplateLoader",
+                "id": 3,
+                "moduleName": "\"aurelia-html-import-template-loader\""
+              }
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "loadTemplate",
+          "kind": 2048,
+          "kindString": "Method",
+          "flags": {
+            "isExported": true
+          },
+          "signatures": [
+            {
+              "id": 8,
+              "name": "loadTemplate",
+              "kind": 4096,
+              "kindString": "Call signature",
+              "flags": {},
+              "comment": {
+                "shortText": "Loads a template.",
+                "returns": "A promise which resolves when the TemplateRegistryEntry is loaded with a template.\n"
+              },
+              "parameters": [
+                {
+                  "id": 9,
+                  "name": "loader",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "comment": {
+                    "text": "The loader that is requesting the template load."
+                  },
+                  "type": {
+                    "type": "reference",
+                    "name": "Loader",
+                    "id": 46,
+                    "moduleName": "\"aurelia-loader\""
+                  }
+                },
+                {
+                  "id": 10,
+                  "name": "entry",
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "flags": {},
+                  "comment": {
+                    "text": "The TemplateRegistryEntry to load and populate with a template."
+                  },
+                  "type": {
+                    "type": "reference",
+                    "name": "TemplateRegistryEntry",
+                    "id": 31,
+                    "moduleName": "\"aurelia-loader\""
+                  }
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "Promise",
+                "typeArguments": [
+                  {
+                    "type": "instrinct",
+                    "name": "any"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "groups": [
+        {
+          "title": "Constructors",
+          "kind": 512,
+          "children": [
+            4
+          ]
+        },
+        {
+          "title": "Methods",
+          "kind": 2048,
+          "children": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "configure",
+      "kind": 64,
+      "kindString": "Function",
+      "flags": {
+        "isExported": true
+      },
+      "signatures": [
+        {
+          "id": 12,
+          "name": "configure",
+          "kind": 4096,
+          "kindString": "Call signature",
+          "flags": {},
+          "comment": {
+            "shortText": "Configuires the HTMLImportTemplateLoader as the default loader for Aurelia."
+          },
+          "parameters": [
+            {
+              "id": 13,
+              "name": "config",
+              "kind": 32768,
+              "kindString": "Parameter",
+              "flags": {},
+              "comment": {
+                "text": "The FrameworkConfiguration instance.\n"
+              },
+              "type": {
+                "type": "reference",
+                "name": "Object"
+              }
+            },
+            {
+              "id": 14,
+              "name": "inlineConfig",
+              "kind": 32768,
+              "kindString": "Parameter",
+              "flags": {},
+              "type": {
+                "type": "reference",
+                "name": "Object"
+              }
+            }
+          ],
+          "type": {
+            "type": "reference",
+            "name": "Promise",
+            "typeArguments": [
+              {
+                "type": "instrinct",
+                "name": "void"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "Classes",
+      "kind": 128,
+      "children": [
+        3
+      ]
+    },
+    {
+      "title": "Functions",
+      "kind": 64,
+      "children": [
+        11
+      ]
+    }
+  ]
+}
